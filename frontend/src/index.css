@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+    --font-sans: "DM Sans", sans-serif;
+    --font-display: "Plus Jakarta Sans", sans-serif;
+
+    --color-brand: #315efb;
+    --color-ink: #17212b;
+    --color-muted: #687582;
+    --color-paper: #f7f8fa;
+    --color-line: #e2e7ed;
+}
+
+html {
+    scrollbar-gutter: stable;
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #cbd5e1 transparent;
+}
+
+*::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 999px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+button,
+a,
+input {
+    -webkit-tap-highlight-color: transparent;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Job list scrollbar */
+.job-list-scroll {
+    scrollbar-width: thin;
+    scrollbar-color: #cbd5e1 transparent;
+}
+
+.job-list-scroll::-webkit-scrollbar {
+    width: 7px;
+}
+
+.job-list-scroll::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.job-list-scroll::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 20px;
+}
+
+.job-list-scroll::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
